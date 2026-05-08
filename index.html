@@ -538,6 +538,106 @@
     /* Baku Media Center — portrait logo, needs height override */
     .lw-item img[alt="Baku Media Center"] { width: auto !important; height: 72px !important; }
     .lw-item:has(img[alt="Baku Media Center"]) { width: 220px; }
+  
+  /* ═══════════════════════════════════════════
+     MOBILE OPTIMISATION  ≤ 768px
+  ═══════════════════════════════════════════ */
+  @media(max-width:768px){
+
+    /* ── General spacing ── */
+    .hero{padding:100px 24px 60px}
+    .hero-layout{flex-direction:column-reverse;padding:0;gap:28px;margin-bottom:32px}
+    .hero-left{width:100%}
+    .hero-photo-wrap{align-self:center}
+    .hero-photo{width:140px;height:140px}
+    .hero-photo-ring{inset:-7px}
+    .hero-photo-ring2{inset:-16px}
+    .hero-name{font-size:clamp(52px,16vw,80px);margin-bottom:24px}
+    .hero-tagline{font-size:16px;margin-top:-16px;margin-bottom:20px}
+    .hero-sub{font-size:14px}
+    .hero-avail{margin-top:16px}
+    .hero-social{flex-wrap:wrap;gap:10px;margin-top:16px}
+    .hero-tags{margin-top:16px;justify-content:flex-start}
+    .hero-bg-glow{width:400px;height:400px;top:-100px;right:-100px}
+
+    /* ── Stats ── */
+    .stats{grid-template-columns:1fr 1fr}
+    .stat{padding:40px 24px}
+
+    /* ── Brands / bw-head ── */
+    .brands-section{padding:56px 0 0}
+    .bw-head{padding:0 24px 40px}
+
+    /* ── Logo wall rows ── */
+    .lw-item{padding:20px 28px;width:130px}
+    .lw-logo{height:30px}
+    .lw-track--hotels .lw-logo{height:38px}
+    .lw-item img[alt="Lankaran Springs"],.lw-item img[alt="Birbank Business"]{height:44px!important}
+    .lw-item img[alt="Baku Media Center"]{height:52px!important}
+    .lw-item:has(img[alt="Lankaran Springs"]),.lw-item:has(img[alt="Birbank Business"]){width:220px}
+
+    /* ── Sector heads ── */
+    .sector-head{padding:40px 24px 32px;flex-direction:column;align-items:flex-start;gap:12px}
+    .sector-ghost{font-size:clamp(60px,18vw,100px)!important;right:16px}
+
+    /* ── F1 section ── */
+    .f1-brand-info{padding:32px 24px}
+    .f1-desc{font-size:15px}
+    .f1-landmark{padding:32px 24px}
+    .f1-hero{max-height:240px}
+    .gunah-stills-eyebrow{padding:20px 24px 14px}
+    .gunah-stills{grid-template-columns:1fr}
+
+    /* ── GUNAH section ── */
+    .gunah-layout{grid-template-columns:1fr}
+    .gunah-info,.gunah-collab{padding:32px 24px}
+    .gunah-brand-info{padding:28px 24px}
+    .gunah-hero{max-height:240px}
+
+    /* ── Campaigns ── */
+    .campaigns{padding:56px 24px}
+    .camp-grid{grid-template-columns:1fr;gap:12px}
+    .camp-card{min-height:380px}
+
+    /* ── Services ── */
+    .services{padding:56px 24px}
+    .svc-head{margin-bottom:40px}
+    .svc-grid{grid-template-columns:1fr}
+    .svc{padding:28px 24px}
+    .svc-cta-row{padding:28px 24px;flex-direction:column;align-items:flex-start;gap:16px}
+
+    /* ── About strip ── */
+    .about-strip{flex-direction:column;padding:40px 24px;gap:24px}
+
+    /* ── Contact ── */
+    .contact{padding:60px 24px}
+    .contact-title{font-size:clamp(36px,12vw,64px)!important}
+    .contact-desc{font-size:15px}
+    .contact-cta{width:100%;justify-content:center}
+    .contact-cta-outline{width:100%;justify-content:center}
+
+    /* ── Footer ── */
+    footer{padding:28px 24px}
+    .foot-inner{flex-direction:column;align-items:flex-start;gap:20px}
+    .foot-social{flex-wrap:wrap;gap:16px}
+
+    /* ── Marquee ticker ── */
+    .mq-bar{padding:12px 0}
+    .mq-item{font-size:10px}
+
+    /* ── Section separators ── */
+    .sec-sep{padding:0 24px}
+
+    /* ── Scroll indicator ── */
+    .scroll-ind{display:none}
+  }
+
+  /* ── Extra small (≤ 480px) ── */
+  @media(max-width:480px){
+    .hero-name{font-size:clamp(44px,14vw,64px)}
+    .stats{grid-template-columns:1fr}
+    .hero-social a{font-size:10px;padding:6px 10px}
+  }
   </style>
 </head>
 <body>
